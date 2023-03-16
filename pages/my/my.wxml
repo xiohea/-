@@ -1,0 +1,92 @@
+<!--pages/my/my.wxml-->
+<view class="top">
+  <view class="container">
+    <!-- 顶部按钮 -->
+    <view class="topIcon">
+      <van-icon name="chat-o" class="chat-o" size="25px"/>
+      <van-icon name="setting-o" class="setting-o" size="25px" dot />
+    </view>
+    <!-- 头像部分 -->
+    <view class="avatar" wx:for="{{avatar}}" wx:key="id">
+      <image class="avatarImg" src="{{item.img}}"/>
+      <view class="avatar-center">
+        <text class="avatar-text">{{item.phoneNum}}</text>
+        <view class="avatar-btn1"> 
+          <view class="iconfont icon-huiyuan- fl"></view>
+          {{item.btn1}}
+        </view>
+        <view class="avatar-btn2"> 
+          <view class="iconfont icon-7 fl"></view>
+          {{item.btn2}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 切换身份 -->
+  <view class="avatar-btn3">
+    <navigator url="/pages/login/login" hover-class="none">
+      <view class="avatarBtb3-icon iconfont icon-xingxing fl"></view>切换身份
+    </navigator>
+  </view>
+</view>
+
+<view class="container">
+  <!-- 普通会员部分 -->
+  <view class="member" wx:for="{{member}}" wx:key="id"> 
+    <view class="member-copy">
+      <view class="member-top">
+        <view class="memberTop-left">
+          <view class="memberTop-text iconfont icon-huiyuan"> {{item.huiyuan}}</view>
+          <view class="memberTop-text1">{{item.date}}</view>
+        </view> 
+        <view class="memberTop-right">
+          <view class="memberTop-right1">
+            <view class="iconfont icon-renwu"></view>
+            <view class="memberTop-qq">****</view>
+          </view> 
+          <view class="memberTop-right1">
+            <view class="iconfont icon-renwu"></view>
+            <view class="memberTop-vip">****</view>
+          </view>
+          <navigator url="/pages/login/login" hover-class="none" open-type="navigateBack">
+            <van-icon name="arrow" class="arrow" size="18px" />
+          </navigator>
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="member-bottom">
+        <view class="memberBottom-left fl">{{item.text}}</view>
+        <view class="memberBottom-right fr">立即查看</view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的钱包部分 -->
+  <view class="moeny">
+    <view class="moenyTop">
+      <navigator url="/pages/login/login" hover-class="none">
+        <view class="moenyTop-left fl">我的钱包</view>
+      </navigator>
+      <view class="moenyTop-right fr">进入钱包 ></view>
+    </view>
+    <view class="line1"></view>
+    <view class="moenyBottom">
+      <view class="moenyBottom-box fl" wx:for="{{moeny}}" wx:key="id">
+        <view class="moenyBotbox-text1">{{item.num}}</view>
+        <view class="moenyBotbox-text2">{{item.text}}</view>
+        <view class="moenyBotbox-text3">{{item.text1}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 部分 -->
+  <view class="consumption">
+  </view>
+  <!-- 部分 -->
+  <view class="wish">
+  </view>
+  <!-- 部分 -->
+  <view class="nat">
+  </view>
+  <!-- 部分 -->
+  <view class="jion">
+  </view>
+</view>

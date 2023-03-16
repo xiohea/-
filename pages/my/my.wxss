@@ -1,0 +1,353 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #f6f6f6;
+}
+.container{
+  width: 94%;
+  margin: 0 auto;
+}
+.top{
+  background: linear-gradient(to right,#cae0ff,#f6e9f1);
+  background: linear-gradient(to bottom,rgba(202, 224, 255 ,1),rgba(249, 249, 249, 0));
+}
+/* 顶部按钮 */
+.topIcon{
+  width: 100%;
+  height: 45px;
+  padding-top: 20px;
+}
+.setting-o{
+  padding-top: 10px;
+  padding-left: 20px;
+  float: left;
+}
+.chat-o{
+  padding-top: 10px;
+  float: left;
+}
+/* 头像部分 */
+.avatar{
+  padding: 10px 0px;
+}
+.avatarImg{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  float: left;
+}
+.avatar-center{
+  width: 250px;
+  height: 55px;
+}
+.avatar-text{
+  font-size: 18px;
+  font-weight: 600;
+  float: left;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.icon-huiyuan-{
+  font-size: 12px;
+  width: 12px;
+  background-color: #81b2e7;
+  padding: 3px;
+  border-radius: 50%;
+  color: #FFF;
+  margin: 0 5px;
+}
+.avatar-btn1{
+  font-size: 12px;
+  padding: 5px 8px;
+  background-color: #efecf0;
+  float: left;
+  left: 0;
+  margin-left: 10px;
+  border-radius: 20px 0px 0px 20px;
+  border-right: 1px solid #ccc;
+  color: rgb(112, 112, 112);
+}
+.avatar-btn2{
+  font-size: 12px;
+  padding: 5px 8px;
+  float: left;
+  background-color: #efecf0;
+  border-radius: 0px 20px 20px 0px;
+  color: rgb(112, 112, 112);
+}
+.icon-7{
+  font-size: 12px;
+  width: 12px;
+  background-color: #3ae196;
+  padding: 3px;
+  border-radius: 50%;
+  color: #FFF;
+  margin: 0 5px;
+}
+.avatar-sign{
+  float: right;
+}
+/* 切换身份 */
+.avatar-btn3{
+  font-size: 14px;
+  padding: 5px 10px 5px 5px;
+  float: right;
+  background-color: #FFF;
+  border-radius: 20px 0px 0px 20px;
+  margin-top: -55px;
+  box-shadow: 0px 5px 6px #ccc;
+}
+.avatarBtb3-icon{
+  font-size: 14px;
+  width: 14px;
+  background-color: #e0a068;
+  padding: 3px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+/* 普通会员部分 */
+.member-copy{
+  width: 100%;
+  height: 130px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  background: linear-gradient(to right,#cce7fa,#5da1e8);
+  z-index: 99;
+  color: #033d93;
+}
+.member{
+  width: 100%;
+  height: 170px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom,#7ca6d3,#fdfeff);
+  z-index: -1;
+}
+.member-top{
+  padding:15px 20px;
+  height: 44px;
+}
+.memberTop-left{
+  float: left;
+}
+.memberTop-text{
+  font-size: 20px;
+  font-weight: 600;
+  color: #033d93;
+}
+.memberTop-text1{
+  color: #033d93;
+  font-size: 12px;
+  margin-top: 2px;
+}
+.memberTop-right{
+  float: right;
+  width: 100px;
+}
+.memberTop-right1{
+  float: left;
+  margin-right: 10px;
+}
+.icon-yinle{
+  font-size: 18px;
+  width: 18px;
+  background-color: #a7d7fe;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.memberTop-qq{
+  float: left;
+  font-size: 12px;
+  text-align: center;
+}
+.memberTop-vip{
+  font-size: 13px;
+}
+.icon-renwu{
+  font-size: 18px;
+  width: 18px;
+  background-color: #a7d7fe;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.arrow{
+  float: right;
+  color: #033d93;
+  margin-top: 13px;
+}
+.line{
+  margin: 0px 20px;
+  border-top: 0.5px solid #7ca6d3;
+}
+.member-bottom{
+  padding: 15px 20px;
+  font-size: 14px;
+}
+.memberBottom-right{
+  padding: 4px 10px;
+  font-size: 12px;
+  background-color: #a7d7fe;
+  border-radius: 20px;
+}
+.memberCopy-left{
+  padding-left:20px;
+  border-right: 1px solid #ccc;
+}
+.memberCopy-icon{
+  color: #033d93;
+  font-size: 14px;
+  font-weight: 600;
+}
+.memberCopy-text{
+  color: #6e828d;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.memberCopy-right{
+  padding-left:5px;
+}
+/* 我的钱包部分 */
+.moeny{
+  width: 100%;
+  height: 114px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.moenyTop{
+  padding: 10px 20px;
+  height: 22px;
+}
+.moenyTop-left{
+  font-weight: 600;
+  font-size: 16px;
+}
+.moenyTop-right{
+  font-size: 13px;
+  color: rgb(155, 155, 155);
+}
+.line1{
+  width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid rgb(231, 231, 231);
+}
+.moenyBottom{
+  padding: 5px 20px;
+}
+.moenyBottom-box{
+  width: 25%;
+  text-align: center;
+}
+.moenyBotbox-text1{
+  font-weight: 600;
+  font-size: 17px;
+}
+.moenyBotbox-text2{
+  font-weight: 500;
+  font-size: 14px;
+}
+.moenyBotbox-text3{
+  font-size: 10px;
+  color: rgb(155, 155, 155);
+}
+/* 消费券部分 */
+.consumption{
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.consumption-box{
+  width: 42%;
+  padding-left:  20px;
+  padding-top: 10px;
+}
+.consumptionBox-text{
+  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.consumptionBox-text1{
+  font-size: 12px;
+  color: rgb(155, 155, 155);
+}
+.consumptionBox-img{
+  width: 50px;
+  height: 50px;
+}
+/* 心愿盲盒部分 */
+.wish{
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.wishBox{
+  width: 25%;
+}
+.wishBox-img{
+  width: 30px;
+  height: 30px;
+  margin-left: 24px;
+}
+.wishBox-text{
+  text-align: center;
+  font-size: 13px;
+}
+/* 核酸检测部分 */
+.nat{
+  width: 100%;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+.natBox{
+  width: 25%;
+  text-align: center;
+  padding: 5px 0;
+}
+.natBox-icon{
+  font-size: 22px;
+}
+.natBox-text{
+  font-size: 12px;
+}
+/* 加入官方福利群部分 */
+.jion{
+  width: 100%;
+  height: 360px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0px 0px;
+}
+.jionBox{
+  padding-bottom: 20px ;
+  height: 40px;
+}
+.jionBox-icon{
+  font-size: 22px;
+  line-height: 40px;
+}
+.jionBox-text{
+  margin: 0 10px;
+}
+.jionBox-texe1{
+  font-size: 15px;
+  padding: 2px 0;
+}
+.jionBox-texe2{
+  font-size: 11px;
+  color: rgb(163, 163, 163);
+}
+.jionBox-btn{
+  font-size: 14px;
+  line-height: 40px;
+  color: rgb(100, 100, 100);
+}
+.line2{
+  width: 90%;
+  border-top: 1px solid #ccc;
+}

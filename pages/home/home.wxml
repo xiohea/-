@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+  <view class="page-section page-section-spacing swiper">
+    <swiper class="lunbo" indicator-dots="true" autoplay="{{ true }}" interval="2500" duration="400" circular>
+      <swiper-item wx:for="{{imgList}}" wx:key="id">
+        <image class="swiper-item" src="{{item.img}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
